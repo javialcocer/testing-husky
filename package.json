@@ -10,7 +10,9 @@
     "test": "jest --watch"
   },
   "husky": {
-    "pre-push": "CI=true npm test"
+      "hooks": {
+        "pre-push": "CI=true npm test"
+      }
   },
   "dependencies": {
     "next": "12.1.6",
